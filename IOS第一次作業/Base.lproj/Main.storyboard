@@ -1,24 +1,438 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="195-vO-Gd7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--車款-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS第一次作業" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEr-k4-Y4i">
+                                <rect key="frame" x="30" y="48" width="314" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yzf r1" translatesAutoresizingMaskIntoConstraints="NO" id="rwQ-Eh-fLs">
+                                        <rect key="frame" x="0.0" y="387" width="203" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="wiR-cM-2Zh">
+                                        <rect key="frame" x="0.0" y="60" width="186" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEF-Fc-F75">
+                                        <rect key="frame" x="220" y="101" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="H2"/>
+                                        <connections>
+                                            <segue destination="TW7-P3-5hq" kind="show" id="kBH-Mn-4VN"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cbr1000rr" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-dD-2I3">
+                                        <rect key="frame" x="0.0" y="229" width="203" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJc-lB-xlG">
+                                        <rect key="frame" x="220" y="443" width="78" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="YZF-R1"/>
+                                        <connections>
+                                            <segue destination="kbf-lJ-RQB" kind="show" id="dYe-wv-fLO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pZ-fE-yH0">
+                                        <rect key="frame" x="220" y="267" width="94" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="CBR 1000RR"/>
+                                        <connections>
+                                            <segue destination="OAK-in-DDC" kind="show" id="meZ-DW-Ul8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="車款" id="eLI-43-CL9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2425" y="-27"/>
+        </scene>
+        <!--ＹＺＦ-Ｒ１-->
+        <scene sceneID="Vf3-s5-gDa">
+            <objects>
+                <viewController id="kbf-lJ-RQB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9B-v2-3Z4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-ZK-xIq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGG-gH-9Lx">
+                                        <rect key="frame" x="0.0" y="586" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="                                             YZF-R1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LFw-4a-p5a">
+                                        <rect key="frame" x="16" y="0.0" width="359" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="3vo-D9-JdY">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="554"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t10-b7-sVL">
+                                        <rect key="frame" x="0.0" y="103" width="375" height="515"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">初代YZF-R1 考量大多數騎士並不會下賽道騎乘，開發便以山路樂趣為目標，在1997年米蘭車展發表時，就主打著公路最速的概念。
+首先在引擎部份，透過拉高變速箱軸心位置，有效的縮短直四引擎的長度，達到緊緻化的設計，這樣的設計也成為之後各家仿賽車款效仿的對象。搭配Kehin CV 40mm 化油器，的998cc 直四引擎，擁有當時最強的引擎輸出150ps @ 10,000rpm ，最大扭力為108Nm @ 8,500rpm，乾重也是當時最輕的177kg。 許多R1的功能都隨著時代潮流和科技的發達變得更加誘人，像是更輕更短的曲軸與更小的慣性都讓R1在從零開始加速的表現上令人滿意。相信這點能喚醒許多年輕YAMAHA車迷們購買的慾望，除此之外R1的馬力比前代還多了18匹馬力，擁有更強大的動力表現，自然的在各種道路上也就更容以滿足車主們的需求。
+  除了動力表現有增長外，當然壓縮比也從12.7：1 變成13：1，可以感覺衝出去那 一瞬間的力道還停留著，要歸功於第二個燃料噴射裝置持續給力，6000rpm時相對多了百分之五十的動力。此時排氣系統在轉速到高達7500rpm後開始運作，讓R1飆出流暢地速度，表現也更加卓越。我自己就算想努力判斷每個系統運作的連接點，卻找不出任何失誤或停頓，所有的機制都天衣無縫地配合著，目的只有一個：讓新一代的R1和它的騎士在每個過彎都能比之前更快，精準地傳遞騎車的快感與滿足。
+  加速出彎之後，R1新設計的短軸距（1405mm）也是一大功臣，這點對於喜愛騎乘山路的車主們來說是個新的優勢。輕巧的車身（淨重179公斤）更靈活。
+  </string>
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="D4R-4t-h1e"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lYl-CG-9wg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ＹＺＦ-Ｒ１" id="BGE-Ll-jxf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9g1-rI-QiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855.1999999999998" y="634.632683658171"/>
+        </scene>
+        <!--Ｈ２-->
+        <scene sceneID="1xI-g5-tnQ">
+            <objects>
+                <viewController id="TW7-P3-5hq" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Y5w-g2-MQX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="xOX-qA-YgS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-lc-4h9">
+                                <rect key="frame" x="0.0" y="586" width="375" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="                                             H2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O7w-XA-EsU">
+                                <rect key="frame" x="66" y="0.0" width="309" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hD7-8u-eZg">
+                                <rect key="frame" x="8" y="64" width="375" height="439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Kawasaki Ninja H2 全車搭載來自 Ninja H2R 相同的設計理念，增壓引擎是這台車的主軸，998c.c. 四行程四缸雙凸輪軸水冷"機械增壓"引擎，能夠在 10000rpm 釋出 200ps 以及 14.3kgf-m的扭力，扭力大小已經遠遠超過同排氣量的競爭對手，甚至直逼 1300c.c. 級距車款，大動力輸出的背後也配合 Kawasaki TRaction Control ( KTRC ) 三大段循跡控制系統，將後輪扭力輸出線性化，起步時則可以開啟 Kawasaki Launch Control Mode ( KLCM ) 起步彈射控制進行加速最大化體驗，在動力展現的同時，Kawasaki 也在 Ninja H2 上搭配 Kawasaki Intelligent anti-lock Brake System ( KIBS ) 智慧式防鎖死煞車系統，以及 ESD 電子防甩頭等功能做為讓騎士騎乘此高性能車款的安全配備。
+
+外觀部分也是 Ninja H2 令人讚嘆不已的設計之處，原自 Ninja H2R，同由 Kawasaki 旗下 Kawasaki Aerospace Company 進行空力測試，H2R 將車輛的下壓力透過擾流翼最大化，增添車輛穩定性與抓地力，而 Ninja H2 全車採用含銀漆面，因此整台車除了線條銳利，富有科技感外，在太陽下整台車更如同一面鏡子般，非常引人注目，僅單座設計的 Ninja H2 更再三表現出這是台不折不扣賽車的感覺，只是是輛可以合法上路的賽車。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lhf-iV-dOt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ｈ２" id="Qkc-rA-dQf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nep-U6-kmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.8000000000002" y="-711.09445277361328"/>
+        </scene>
+        <!--ＣＢＲ１０００ＲＲ-->
+        <scene sceneID="YYe-dB-b16">
+            <objects>
+                <viewController id="OAK-in-DDC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="olP-gm-IT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bct-On-YHr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-yI-naz">
+                                        <rect key="frame" x="0.0" y="586" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-Ad-5Wd">
+                                        <rect key="frame" x="-8" y="66" width="375" height="554"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JoP-eg-TKs">
+                                        <rect key="frame" x="0.0" y="129" width="375" height="472"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Total Control」為號召，目標訴求跑車最極致的性能表現，無輪是馬力重量比、彎道操控以及車輛加速性，在世界最高錦標的機車賽事 - MotoGP 中，已經被 Honda 給奪下無數次的分站冠軍，而 Honda 當家公升級跑車 CBR1000RR，雖不屬於 MotoGP 級別的賽事車輛，但還是透過 MotoGP 所使用的各種技術進行資料反饋，讓 CBR1000RR 無論在操控性，或是加速性能方面，以及騎乘的整體感受，是屬於非常均勻的設計，而 Honda 車系也代表的是直覺的操控，不像其他車廠有多種動力模式可調整，或是有多種的防止車手失誤的機制如循跡系統等裝備安裝於車上，CBR1000RR 車系總是給予最直接的反應，但又能帶有讓騎士能輕鬆上手的整體車輛設定。
+　　Honda 在 2004 年從 CBR954RR 進化後，推出了 CBR1000RR，純種近 1000c.c. 排氣量搭配六前速鏈條傳動系統，讓公升級跑車的市場產生更大的較勁火花，而從 2004 年進化到 2014 年，歷經十年的時間，也讓整體車性改變共四代，車體的空氣動力性能也設計的越來越沉穩，當然 Honda 車系強大的 PGM-DSFi 噴射系統，讓 CBR1000RR 的動力性能不容小看，在仿賽車輛中講到 "搭波R ( Double R) "，無人不曉，而 Honda 在最近一代的改變，除了在引擎性能再度升級以外，就是改為令人熱血沸騰的全數位液晶儀表，以及捨去 HMAS 懸吊系統，改以 SHOWA BPF 倒立式前叉與浮動平衡式多連桿後避震系統，讓操控的舒適度以及不論彎道與直線的穩定性均增加許多配合比過去略為減少的側面整流罩，引擎跟車架呈現更緊湊的樣貌，新世代CBR1000RR再次奠定公升級跑車的領先地位。將成為新世紀劃時代的跑車象徵！</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="ViL-j1-sIj"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LKi-OK-db4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ＣＢＲ１０００ＲＲ" id="sZB-VR-WaX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTN-X1-YUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3220" y="-43.628185907046479"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CNF-SB-3ZF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="195-vO-Gd7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="o5Y-E7-dtK"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ySJ-96-XsR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZiZ-gM-dyz" kind="relationship" relationship="viewControllers" id="Dtx-Up-pBX"/>
+                        <segue destination="2ds-9H-8VL" kind="relationship" relationship="viewControllers" id="qD9-hX-tNr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5A-Mc-sBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-42"/>
+        </scene>
+        <!--歐洲車場-->
+        <scene sceneID="Evk-Ki-5xF">
+            <objects>
+                <viewController id="lEt-ML-r7T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sta-ed-RoX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79c66e4ed49fd0a5828d625b81c7a506_1200" translatesAutoresizingMaskIntoConstraints="NO" id="TzP-WD-j3h">
+                                <rect key="frame" x="9" y="101" width="211" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1000x_440966_mo_19" translatesAutoresizingMaskIntoConstraints="NO" id="7nS-ra-Ngs">
+                                <rect key="frame" x="9" y="287" width="211" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP4_1" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-in-s6D">
+                                <rect key="frame" x="9" y="453" width="211" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9Z-nS-Hql">
+                                <rect key="frame" x="235" y="330" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="RSV4"/>
+                                <connections>
+                                    <segue destination="0fB-KW-bqA" kind="show" id="HQF-WR-bxs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4q-K6-tbf">
+                                <rect key="frame" x="278" y="516" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="S1000RR"/>
+                                <connections>
+                                    <segue destination="a09-cR-UbQ" kind="show" id="gr4-Ff-oFr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYP-Rw-rph">
+                                <rect key="frame" x="248" y="150" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="959 Panigale"/>
+                                <connections>
+                                    <segue destination="v9E-4Y-6TI" kind="show" id="Dz3-aX-VeJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="DjP-kb-XeR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="歐洲車場" id="w07-59-UsZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl7-Nx-1dq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.2" y="776.76161919040487"/>
+        </scene>
+        <!--ＲＳＶ４-->
+        <scene sceneID="nns-hE-irc">
+            <objects>
+                <viewController id="0fB-KW-bqA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tlw-5G-0DA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="zoU-yy-6A2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QI1-kO-sAE">
+                                <rect key="frame" x="9" y="95" width="357" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">RSV4是來自義大利、專注於賽車的APRILIA車廠，現今旗下機種之中，最具代表性的車款，一台車的靈魂，最重要的部分就來自動力心臟，RSV4生來所具備的騎乘特性，就來自於車架內的V4引擎。V型四缸引擎與一般公升級仿賽車常用的直列四缸引擎有相當大的差異，首先在於引擎尺寸的不同，V4四缸引擎在寬度部分較窄，連帶能設計出窄小的車架，讓騎士更容易操控車輛。若一起比較實車，雖然可以看出日系仿賽車已經以利用車架與引擎的相對位置來縮窄整體車寬，同時縮小正面的視覺感，但還是可以明顯看出RSV4的車身更為精實，也能感受到車輛的重量更為集中。在這個電控當道的時代裡，不僅僅要比拚車輛的各項配備，就連搭載的電控系統也猶如競賽般不斷加掛，而在RSV4 RF上擁有著Ride by Wire電子油門以及APRC強大的電控系統，包含動力模式的選擇，其中有Sport運動、Race競速以及Track賽道三種模式，另外還有ATC循跡防滑、AWC抑制前輪舉頭、ALC賽車起步、AQS電子快排、以及RLM防翹後輪等多項系統，並搭載BOSCH ABS防鎖死煞車等電控配備。017 RSV4 RF透過V4引擎的配置讓車輛更加緊湊，騎乘起來的感受也有如蛟龍般的靈敏，有別於直列四缸引擎的猛爆特性也令人相當著迷。獨特的三頭燈設計成為RSV4的招牌特色，搭配新塗裝的配置更具廠車風格，前後懸吊系統大幅度的升級，充分表現在車輛的運動性能上，180kg的車重在公升級仿賽車款當中仍屬上乘，全新的液晶儀錶及電控系統更能讓騎士輕鬆享受這部野獅強悍的動力！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="UF4-Cv-uaq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ＲＳＶ４" id="oYP-aD-Ofq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvz-Gx-CWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2832.8000000000002" y="1280.5097451274364"/>
+        </scene>
+        <!--歐洲車廠-->
+        <scene sceneID="UEu-FC-Lc2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZiZ-gM-dyz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="歐洲車廠" image="man-7" id="9NS-b7-RsX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9rz-zr-EgY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lEt-ML-r7T" kind="relationship" relationship="rootViewController" id="zbk-DR-NdI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxv-KB-kNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="757"/>
+        </scene>
+        <!--亞洲車廠-->
+        <scene sceneID="VIV-WN-Cm7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ds-9H-8VL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="亞洲車廠" image="search-7" id="nwb-dD-etF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJP-9a-kfq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9QC-lQ-1FF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJ2-jG-qS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="-26"/>
+        </scene>
+        <!--Ｓ１０００ＲＲ-->
+        <scene sceneID="Sg1-au-fbW">
+            <objects>
+                <viewController id="a09-cR-UbQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jP-un-Nhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-Fe-qsj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hbq-an-Zgc">
+                                <rect key="frame" x="2" y="82" width="357" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">RSV4是來自義大利、專注於賽車的APRILIA車廠，現今旗下機種之中，最具代表性的車款，一台車的靈魂，最重要的部分就來自動力心臟，RSV4生來所具備的騎乘特性，就來自於車架內的V4引擎。V型四缸引擎與一般公升級仿賽車常用的直列四缸引擎有相當大的差異，首先在於引擎尺寸的不同，V4四缸引擎在寬度部分較窄，連帶能設計出窄小的車架，讓騎士更容易操控車輛。若一起比較實車，雖然可以看出日系仿賽車已經以利用車架與引擎的相對位置來縮窄整體車寬，同時縮小正面的視覺感，但還是可以明顯看出RSV4的車身更為精實，也能感受到車輛的重量更為集中。在這個電控當道的時代裡，不僅僅要比拚車輛的各項配備，就連搭載的電控系統也猶如競賽般不斷加掛，而在RSV4 RF上擁有著Ride by Wire電子油門以及APRC強大的電控系統，包含動力模式的選擇，其中有Sport運動、Race競速以及Track賽道三種模式，另外還有ATC循跡防滑、AWC抑制前輪舉頭、ALC賽車起步、AQS電子快排、以及RLM防翹後輪等多項系統，並搭載BOSCH ABS防鎖死煞車等電控配備。017 RSV4 RF透過V4引擎的配置讓車輛更加緊湊，騎乘起來的感受也有如蛟龍般的靈敏，有別於直列四缸引擎的猛爆特性也令人相當著迷。獨特的三頭燈設計成為RSV4的招牌特色，搭配新塗裝的配置更具廠車風格，前後懸吊系統大幅度的升級，充分表現在車輛的運動性能上，180kg的車重在公升級仿賽車款當中仍屬上乘，全新的液晶儀錶及電控系統更能讓騎士輕鬆享受這部野獅強悍的動力！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Nob-J8-qh3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ｓ１０００ＲＲ" id="ZIq-sO-xJ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpK-U2-hVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912.8" y="1459.52023988006"/>
+        </scene>
+        <!--Ducati 959 Panigale-->
+        <scene sceneID="tKC-xN-ctd">
+            <objects>
+                <viewController id="v9E-4Y-6TI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26g-7w-553">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1378663715-3261696543_n" translatesAutoresizingMaskIntoConstraints="NO" id="oVI-Yi-Fg6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="efH-5A-Thn">
+                                <rect key="frame" x="9" y="122" width="357" height="407"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">在2015年米蘭車展上，Ducati正式發表了中量級跑車的最新作品－959 Panigale，取代兩年前的899 Panigale，不僅提升排氣量至959c.c.，更針對全車配重、車身重量等近一步優化。採用Monoconque殼式車架、959 Panigale將車身重心進一部集中至引擎位置，達成前51%、後49%的優異配重，如此設計在騎士跨坐的同時將達成前後1：1的絕佳重量比，感受近乎完美平衡的優異駕馭感受。全新設計的959c.c. Superquadro引擎採用加長行程方式提升排氣量，換來更為充沛的中低轉扭力輸出，可在9000rpm時輸出10.95kgm的扭力。而158hp/10500rpm的馬力表現，搭配僅有176kg的車身乾重，若是換算成馬力重量比可是一點都不輸給旗艦車款1299 Panigale，讓這款中量級跑車可在2.45秒完成0-100km/h加速，0-200更可在7秒內一口氣達成。９５９Panigale身為一輛中量級跑車，自然將科技重點著重於賽道性能，同時也透過多樣化輔助配備讓騎士在一般道路上也能享受迎風駕馭的快感。前避震採用Showa 43mm BFP倒叉、後避震則採用全可調形式藉此因應不同需求的騎士，並結合最新Bosch ABS 9.1MP防鎖死煞車系統、DWC防翹輪系統、DTC循跡防滑系統、EBS引擎剎車系統、RbW電子油門、DQS快排系統等完善輔助，透過三段可調動力模式加以整合，不僅讓強悍性能得以完整發揮，更帶給騎士最安全的騎乘體驗。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="Khz-KN-Fge"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ducati 959 Panigale" id="HLZ-gI-ANu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xho-SW-a4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213.5999999999999" y="1450.5247376311845"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1000x_440966_mo_19" width="1000" height="792"/>
+        <image name="1378663715-3261696543_n" width="600" height="347"/>
+        <image name="79c66e4ed49fd0a5828d625b81c7a506_1200" width="1000" height="562"/>
+        <image name="HP4_1" width="700" height="525"/>
+        <image name="cbr1000rr" width="500" height="374"/>
+        <image name="h2" width="650" height="500"/>
+        <image name="man-7" width="29" height="30"/>
+        <image name="search-7" width="30" height="30"/>
+        <image name="yzf r1" width="840" height="559"/>
+    </resources>
 </document>
